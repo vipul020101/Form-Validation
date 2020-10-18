@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SURVEY FORM </title>
+        <link rel="stylesheet" type="text/css" href="FinalHTMLForm.css"> <!--external css file-->
+        <H1>THIS IS A SURVEY FORM REGARDING AN AVERAGE PERSONS SCREEN-TIME IN DAY</H1>
+        <script type="text/javascript" src="FinalHTMLform.js"></script> <!--external js file-->
+
+        <H2>PLEASE PAY ATTENTION TO THE QUESTIONS! :)</H2>
+
+        <h3>THE MAIN PURPOSE OF THIS SURVEY IS TO BRING AWARENESS ABOUT THE DANGEROUS HAZARD NAMED <strong>SCREEN-TIME </strong></h3>
+    </head>
+
+    <body onload="alert('Hello! AMIGOS')">
+
+        <!--these are the para tags using different classes from external css file-->
+        <p class="a"> <strong>1.</strong> Time is the amount of time spent using a device with a screen such as a smartphone, computer, television, or video game console.</p>
+        <p class="b"> <strong>2.</strong> The concept is under significant research with related concepts in digital media use and mental health. </p>
+        <p class="c"> <strong>3.</strong> Ideally, adults should limit their screen time similar to children and only use screens for about two hours a day. However, many adults spend up to 11 hours a day looking at a screen.</p>
+        <p class="d"> <strong>4.</strong>  6 Negative Effects Of Too Much Screen Time For Kids
+            Sleep Deprivation. Without question, the screens of many devices are causing a crisis of sleep deprivation for all age groups.<br>
+            Obesity.  <br>
+            Vision Problems.  <br>
+            Aches and Pains. <br>
+            Loss of Social Skills. <br>
+            Aggression. <br> </p>
+
+            <span style="display: block;">Here are some pictures which give us an idea about <i>SCREEN-TIME :</i></span>
+
+          <!--inserting images to the page-->  
+         <img  style="display: block; float: right; padding: 2mm;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSGHX5Jd9ZUxz3jluusOuWcykKeJFsL2NxzJA&usqp=CAU" height="400" width="400"> <br>
+         <img  style="display: block; float: left;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS_6X9Dk6AA5zc3Uke5GQUWoF5HLSgIjTssKA&usqp=CAU" height="400" width="400"> <br>
+         
+         <!--table for our inputs in the HTML form-->
+         <table>
+            <tr>
+                <td class="label_col">First Name :</td>
+                <td class="input_col"><input name="firstname" id="name1" type="text" onblur="validateFirstName();"></td>
+                <td class="feedback_col"><span id="firstNamePrompt">&nbsp;</span></td>
+            </tr>
+            <tr>
+                <td class="label_col">Last Name :</td>
+                <td class="input_col"><input name="lastname" id="name2" type="text" onblur="validateLastName();"></td>
+                <td class="feedback_col"><span id="lastNamePrompt">&nbsp;</span></td>
+            </tr>
+            <tr>
+                <td class="label_col">Phone number :</td>
+                <td class="input_col"><input name="phone" id="phone" type="text" onblur="validatePhone();" placeholder="xxx-xxx-xxxx"></td>
+                <td class="feedback_col"><span id="phonePrompt"> xxx-xxx-xxxx</span></td>
+            </tr>
+        </table>
+           
+            <!--these are some other inputs for our HTML form-->
+            HOW OLD ARE YOU? :<input type="number" id="field2" min="1" max="99" onblur="checkField2()">
+            <p id="message2" style="color: green;" ></p>
+
+            HOW MANY HOURS DO YOU USE YOUR SCREEN?<input type="number" id="time1" min="1" max="24" onblur="watchTime()">
+            <p id="info1" style="color: greenyellow;"></p>
+
+            DATE OF BIRTH: <input type="date" name="birthday">
+            <br>
+
+            GENDER:<br><input type="radio" name="gender" value="male"checked>male <br>
+                <input type="radio" name="gender" value="female">female <br>
+                <input type="radio" name="gender" value="Others">OTHERS <br>
+       
+                WHICH COLOR DO YOU SEE WHEN YOU CLOSE YOUR EYES?<input type="color" name="color"><br>
+                <br>
+
+
+                WHICH DEVICE DO YOU USE MORE?: <BR><input type="checkbox" name="device" value="phone"> PHONE <br>
+                                             <input type="checkbox" name="device" value="laptop" required> LAPTOP <br>
+                                             <input type="checkbox" name="device" value="television" required>TELEVISION  <br>
+    </body>
+</html>
